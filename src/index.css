@@ -85,6 +85,9 @@ img {
     margin-top: 15px;
     border-radius: 50px;
     margin-left: 35px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 button {
@@ -92,8 +95,8 @@ button {
   height: 80px;
   border-radius: 50%;
   color: white;
-  font-size: 10px;
   font-size: 30px;
+  cursor: pointer;
 }
 
 .buttons {
@@ -140,4 +143,10 @@ button {
 
 .operator-buttons > button {
   background-color: #237293;
+}
+
+p {
+  font-size: 30px;
+  margin-right: 20px;
+  color: white;
 }
