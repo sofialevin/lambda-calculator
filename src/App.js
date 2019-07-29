@@ -16,9 +16,8 @@ function App() {
 
   const [result, setResult] = useState(0);
 
-  const updateResult = num => {
+  const updateDisplay = num => {
     setResult(num);
-    console.log('test')
   }
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
   // Once the state hooks are in place write some functions to hold data in state and update that data depending on what it needs to be doing
@@ -34,8 +33,8 @@ function App() {
         <div>
           <Display result={result}/>
           <div className="buttons">
-            <Specials />
-            <Numbers changeNumber={updateResult}/>
+            <Specials updateDisplay={updateDisplay}/>
+            <Numbers updateDisplay={updateDisplay}/>
             <Operators />
           </div>
         </div>
