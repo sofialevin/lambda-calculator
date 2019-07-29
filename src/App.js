@@ -14,7 +14,7 @@ import Logo from "./components/DisplayComponents/Logo";
 
 function App() {
 
-  const [result, setResult] = useState(0);
+  const [result, setResult] = useState('0');
 
   const updateDisplay = num => {
     setResult(num);
