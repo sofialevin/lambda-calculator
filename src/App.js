@@ -34,7 +34,7 @@ function App() {
           <Display result={result}/>
           <div className="buttons">
             <Specials updateDisplay={updateDisplay}/>
-            <Numbers updateDisplay={updateDisplay}/>
+            <Numbers updateDisplay={updateDisplay} result={result}/>
             <Operators />
           </div>
         </div>
